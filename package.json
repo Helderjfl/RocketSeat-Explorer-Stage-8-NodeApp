@@ -1,0 +1,25 @@
+{
+  "name": "rocketseat-explorer-stage-8-nodeapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon ./src/server.js",
+    "migrate": "npx knex migrate:latest"
+  },
+  "keywords": [],
+  "author": "Helder Jefferson Ferreira da Luz",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "knex": "^3.1.0",
+    "mysql2": "^3.11.0"
+  },
+  "type":"module",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
