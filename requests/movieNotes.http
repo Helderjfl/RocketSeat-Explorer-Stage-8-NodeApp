@@ -1,0 +1,23 @@
+@host = localhost
+@port = 3333
+@route = movieNotes
+
+###
+GET http://{{host}}:{{port}}/{{route}}?user_id=1&title=Harry
+
+###
+GET http://{{host}}:{{port}}/{{route}}/5
+
+###
+POST http://{{host}}:{{port}}/{{route}}/1
+Content-Type: application/json
+
+{
+  "title": "Harry Potter e a Pedra Filosofal",
+  "description": "Harry Potter descobre que é um bruxo e vai para a escola de magia de Hogwarts",
+  "tags": ["Harry Potter", "Magia", "Bruxos"],
+  "rating": 4
+}
+
+###
+DELETE http://{{host}}:{{port}}/{{route}}/5
