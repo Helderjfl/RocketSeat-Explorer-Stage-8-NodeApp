@@ -1,0 +1,9 @@
+@host = localhost
+@port = 3333
+@route = movieTags
+
+###
+GET http://{{host}}:{{port}}/{{route}}?user_id=1
+
+###
+GET http://{{host}}:{{port}}/{{route}}/1
